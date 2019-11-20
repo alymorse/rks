@@ -1,0 +1,90 @@
+<!doctype html>
+
+<html>
+    <head>
+        
+        <!-- css reset -->
+        <link href="css/reset.css" rel="stylesheet" type="text/css">
+        
+        <!-- css style -->
+        <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+        
+        <!-- web fonts -->
+         <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <div class="container">
+       <hr width="60%" Algin="center">
+      <!-- navigation bar -->
+          <div class="topnav">
+    <oi>
+        <a class="active" href="index.html">Home</a></oi>
+    <oi><a href="About.html">About</a></oi>
+    <oi><a href="TourDates.html">Tour Dates</a></oi>
+    <oi> <a href="NewMusic.html">Bops</a></oi>
+   
+</div>
+            
+    <!-- end navbar -->
+<hr width="60%" Algin="center">
+    <!-- Slide Show -->
+<section class="slider">
+    <div class="container">
+    </div>
+    <div class="mySlides">
+        <img src="Photos/fullband3.png" style="width:100%"/>
+        <h2>
+            <span>RAINBOW KITTEN SURPRISE</span></h2>
+    </div>
+    <div class="mySlides">
+        <img src="Photos/fullband4.png" style="width:100%"/>
+        <h2><span>RAINBOW KITTEN SURPRISE</span></h2>
+    </div>
+    <div class="mySlides">
+        <img src="Photos/fullband5.png" style="width:100%">
+        <h2><span>RAINBOW KITTEN SURPRISE</span></h2>
+    </div>
+</section>
+ 
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 3000);
+    }
+</script>
+    <!-- end slide show -->
+<div class="hl"></div>
+            
+<!-- Sections and articles -->
+<h1>Show an e-mail field</h1>
+
+<h3>Join our fan club</h3><form action="/action_page.php">E-mail: <input type="email" name="emailaddress">
+  <input type="submit">
+</form>
+
+
+    <div class="grid-container">
+            
+            <h1> index page </h1>
+                
+            </div> <!-- end grid-container -->
+        
+        </div> <!-- end container -->
+
+    </body>
+
+
+</html>
